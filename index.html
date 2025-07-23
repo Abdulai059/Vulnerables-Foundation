@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sopot - Charity Organization</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  </head>
+
+  <body>
+    <!-- Header & Navigation -->
+    <header>
+      <nav>
+        <!-- Add the logo and name here -->
+        <div class="logo-container">
+          <img src="./assest/logo-bg.png" alt="Logo" class="logo" />
+          <span class="ngo-name">VWF</span>
+        </div>
+
+        <input type="checkbox" id="sidebar-active" />
+        <label for="sidebar-active" class="open-sidebar-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="32px"
+            viewBox="0 -960 960 960"
+            width="32px"
+            fill="#e3e3e3"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+        </label>
+
+        <label id="overlay" for="sidebar-active"></label>
+        <div class="links-container">
+          <label for="sidebar-active" class="close-sidebar-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="32px"
+              viewBox="0 -960 960 960"
+              width="32px"
+              fill="#e3e3e3"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </label>
+
+          <div class="nav-links">
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#best-sec">Event</a>
+            <a href="#Team">Team</a>
+            <a href="#Contact">Contact Us</a>
+            <button id="nav-button" href="#Donation">Donation</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="Home">
+      <div class="container hero-container">
+        <div class="hero-content replace">
+          <h1>
+            Making Today’s Vulnerables
+            <span class="underline">Future</span> Honorables.
+          </h1>
+          <p>
+            To create a world the vulnerable children are supported to reach
+            their full potential, making them
+            <span class="underline_span">future Honorables</span> and breaking
+            the chain of poverty...
+          </p>
+          <a href="#" class="btn-primary">Learn More</a>
+          <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container features-container">
+        <div class="feature-box volunteer">
+          <p>Our Core Focus</p>
+          <h2>Programs That Empower</h2>
+          <ul>
+            <li>Education Support</li>
+            <li>Financial Assistance</li>
+            <li>Mentorship Programs</li>
+            <li>School Outreach</li>
+          </ul>
+          <!-- <a href="/programs" class="btn-primary">View All</a> -->
+        </div>
+        <div class="feature-box donation">
+          <p>Be Part of the Change</p>
+          <h2>Get Involved With Us</h2>
+          <ul>
+            <li>Become a Volunteer</li>
+            <li>Sponsor a Child</li>
+            <li>Partner With Us</li>
+            <li>Donate</li>
+          </ul>
+          <!-- <a href="/get-involved" class="btn-primary">Join Now</a> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Best Features Section -->
+    <section class="best-features" id="best-sec">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tagline">OUR BEST FEATURES</span>
+          <h2>We Popular To Provide Of <br />Experience.</h2>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-image">
+              <img src="./pho.jpg" alt="Mother and children" />
+            </div>
+
+            <h3>Education Support</h3>
+            <p>
+              We provide essential learning materials like books, pens, school
+              bags, uniforms, and footwear to students in need.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-image">
+              <img src="./pic.jpg" alt="Happy family" />
+            </div>
+            <h3>School Outreach & Community Engagement</h3>
+            <p>
+              We work with schools and communities to identify vulnerable
+              children and support them directly where it matters most.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-image">
+              <img src="./nice.jpg" alt="Children in need" />
+            </div>
+            <h3>Mentorship Programs</h3>
+            <p>
+              Through guidance and mentorship, we help students develop
+              confidence, life skills, and a vision for their future.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us" id="About">
+      <div class="container about-container">
+        <div class="about-images">
+          <div class="main-image">
+            <img src="./rad.jpg" alt="Children smiling" />
+          </div>
+          <div class="small-image">
+            <img src="./pic.jpg" alt="Children in need" />
+          </div>
+        </div>
+        <div class="about-content">
+          <span class="section-tagline">ABOUT US</span>
+          <h2>Misson.</h2>
+          <div class="about-mission">
+            <!-- <div class="h-line"></div> -->
+            <p>
+              <i class="fas fa-check-circle"></i> To create a world where the
+              vulnerables are supported to reach their full potential, making
+              them future Honorables and breaking the chain of poverty.
+            </p>
+          </div>
+
+          <h2 id="vision">Vision.</h2>
+          <ul class="about-list">
+            <li>
+              <i class="fas fa-check-circle"></i> Identify and reach out to
+              valnerable student to reach their full potential.
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i> Provide financial assistance.
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i> Offer mentoship programs.
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i> Provide learning materials
+              such as books, pens, school bags, uniforms, footware etc to the
+              valnerable in school.
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i> Perspiciatis unde omnis iste
+              laudanturs.
+            </li>
+          </ul>
+
+          <a href="#" class="btn-primary">About More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Future section of pics -->
+    <section class="feature-section">
+      <div class="feuture-sub-secton">
+        <div class="feature-container">
+          <p class="section-feature">OUR RECENT FEATURES</p>
+          <h2>We Best Popular To Join</h2>
+        </div>
+        <div class="grid-container">
+          <div class="placeholder">
+            <img src="./pho.jpg" alt="Grid Image 1" class="grid-image" />
+          </div>
+          <div class="placeholder">
+            <img src="./pic.jpg" alt="Grid Image 2" class="grid-image" />
+          </div>
+          <div class="placeholder">
+            <img src="./nice.jpg" alt="Grid Image 3" class="grid-image" />
+          </div>
+          <div class="placeholder">
+            <img src="./rad.jpg" alt="Grid Image 4" class="grid-image" />
+          </div>
+          <div class="placeholder">
+            <img src="./pho.jpg" alt="Grid Image 5" class="grid-image" />
+          </div>
+          <div class="placeholder">
+            <img src="./pic.jpg" alt="Grid Image 6" class="grid-image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section class="donations" id="Donation">
+      <div class="donation-options">
+        <!-- Mobile Money Options -->
+        <div class="donation-category">
+          <div class="donation-header">
+            <span class="section-tagline">SUPPORT OUR CAUSE</span>
+            <h2>Make a Donation Today</h2>
+            <p class="section-description">
+              Your contribution helps us provide essential support to those in
+              need. Choose your preferred payment method below.
+            </p>
+          </div>
+          <div class="payment-methods">
+            <!-- MTN MoMo -->
+            <div class="payment-method">
+              <div class="payment-icon">
+                <span style="font-size: 24px; color: #ffcc00"
+                  ><img src="./assest/mtn-momo.png" alt="nmt danation"
+                /></span>
+              </div>
+              <div id="payment-conntainer">
+                <h4>Wide Range Of Properties</h4>
+                <p class="payment-info">Send to: <strong>0770123456</strong></p>
+                <div class="payment-steps">
+                  <p>1. Dial *170#</p>
+                  <p>2. Select "Send Money"</p>
+                  <p>3. Enter our number</p>
+                  <p>4. Enter amount</p>
+                  <p>5. Enter PIN and confirm</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Vodacom -->
+            <div class="payment-method">
+              <div class="payment-icon">
+                <span style="font-size: 30px; color: #e60000"
+                  ><img src="./assest/T-Cash Red.png" alt="TelecelCash"
+                /></span>
+              </div>
+              <div id="payment-conntainer">
+                <h4>Telecel GH</h4>
+                <p class="payment-info">Send to: <strong>0740123456</strong></p>
+                <div class="payment-steps">
+                  <p>1. Dial *110#</p>
+                  <p>2. Select "Send Money"</p>
+                  <p>3. Enter our number</p>
+                  <p>4. Enter amount</p>
+                  <p>5. Enter PIN and confirm</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bank Transfer -->
+            <div class="payment-method">
+              <div class="payment-icon">
+                <span style="width: 90px; height: 90px"
+                  ><img src="./assest/adb.png" alt="Bank Transfer"
+                /></span>
+              </div>
+              <h4>Bank Transfer</h4>
+              <div class="bank-info">
+                <p><strong>Account Name:</strong> Sopot Charity Organization</p>
+                <p><strong>Account Number:</strong> 1234567890</p>
+                <p><strong>Bank Name:</strong> National Bank</p>
+                <p class="bank-note">
+                  Please include your name and "Donation" in the transfer
+                  description
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="donation-footer">
+            <p>
+              For assistance with donations, please contact us at
+              <strong>donations@sopot.org</strong> or call
+              <strong>+123 456 7890</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Team of Vanerable wellfare foundation -->
+    <section class="team-section" id="Team">
+      <div class="container">
+        <div class="section_header">
+          <h2>Meet Our Team</h2>
+          <p>
+            Our talented team of professionals is dedicated to bringing you the
+            best service and expertise in the industry.
+          </p>
+        </div>
+
+        <div class="team-grid">
+          <!-- Team Member 1 -->
+          <div class="team-member">
+            <div class="member-image">
+              <img src="./photo.jpg" alt="John Doe" />
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">John Doe</h3>
+              <p class="member-role">Chief Executive Officer</p>
+            </div>
+          </div>
+
+          <!-- Team Member 2 -->
+          <div class="team-member">
+            <div class="member-image">
+              <img src="./photo.jpg" alt="Jane Smith" />
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">Jane Smith</h3>
+              <p class="member-role">Creative Director</p>
+            </div>
+          </div>
+
+          <!-- Team Member 3 -->
+          <div class="team-member">
+            <div class="member-image">
+              <img src="./photo.jpg" alt="Robert Johnson" />
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">Robert Johnson</h3>
+              <p class="member-role">Lead Developer</p>
+            </div>
+          </div>
+
+          <!-- Hidden Team Members (6) - These will be revealed when clicking "View More" -->
+          <div class="team-member hidden-members">
+            <div class="member-image">
+              <img src="/api/placeholder/400/400" alt="Michael Chen" />
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">Michael Chen</h3>
+              <p class="member-role">Product Manager</p>
+            </div>
+          </div>
+
+          <div class="team-member hidden-members">
+            <div class="member-image">
+              <img src="/api/placeholder/400/400" alt="Sarah Kim" />
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">Sarah Kim</h3>
+              <p class="member-role">UX Designer</p>
+            </div>
+          </div>
+        </div>
+        <div class="view-more-container">
+          <button class="view-more-btn" id="viewMoreBtn">View More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Questions and section & FAQ's  -->
+    <section class="faq-section">
+      <div class="faq-container">
+        <div class="faq-header">
+          <h2 class="faq-title">Frequently Asked Questions</h2>
+          <p class="faq-subtitle">
+            Vulnerable Welfare Foundation (VWF) - Making Today's Vulnerables
+            Future Honorables
+          </p>
+        </div>
+        <div class="faq-container-flex">
+          <div class="faq-list">
+            <div class="faq-item">
+              <input type="checkbox" id="faq1" name="faq" />
+              <label class="faq-question" for="faq1"
+                >What is the Vulnerable Welfare Foundation (VWF)?</label
+              >
+              <div class="faq-answer">
+                <p>
+                  VWF is a non-profit organization dedicated to supporting
+                  vulnerable individuals—especially students—by helping them
+                  reach their full potential and become future leaders in
+                  society.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <input type="checkbox" id="faq2" name="faq" />
+              <label class="faq-question" for="faq2">Who do you support?</label>
+              <div class="faq-answer">
+                <p>
+                  We primarily support vulnerable children and students in
+                  schools who lack the basic resources needed for education and
+                  personal development.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <input type="checkbox" id="faq3" name="faq" />
+              <label class="faq-question" for="faq3"
+                >What kind of help do you provide to vulnerable children?</label
+              >
+              <div class="faq-answer">
+                <p>We provide:</p>
+                <ul>
+                  <li>Financial support (e.g., school fees)</li>
+                  <li>
+                    Educational materials (books, pens, school bags, etc.)
+                  </li>
+                  <li>School uniforms and footwear</li>
+                  <li>Mentorship and motivational program</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <input type="checkbox" id="faq4" name="faq" />
+              <label class="faq-question" for="faq4"
+                >How can I support the foundation's work?</label
+              >
+              <div class="faq-answer">
+                <p>
+                  You can support us by donating money, educational materials,
+                  or volunteering your time as a mentor. Please contact us
+                  directly to find out how you can help.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <input type="checkbox" id="faq5" name="faq" />
+              <label class="faq-question" for="faq5"
+                >How are donations used?</label
+              >
+              <div class="faq-answer">
+                <p>
+                  All donations are used to support our core mission—providing
+                  education, mentorship, and basic needs to vulnerable children
+                  in schools.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <input type="checkbox" id="faq6" name="faq" />
+              <label class="faq-question" for="faq6"
+                >How can I volunteer with VWF?</label
+              >
+              <div class="faq-answer">
+                <p>
+                  We welcome volunteers for mentorship, outreach programs, and
+                  logistics support. Just send us a message via email or phone,
+                  and we'll guide you through the process.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-section">
+            <h3 class="contact-title">Do you have more questions?</h3>
+            <p>
+              We're happy to help! Reach out to us and we'll respond as soon as
+              possible.
+            </p>
+            <form class="contact-form" id="contact_form_fill">
+              <input
+                type="Name"
+                id="name"
+                placeholder="Enter your name "
+                required
+              />
+
+              <input
+                type="text"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+
+              <textarea
+                name="massage"
+                id="massage"
+                placeholder="Massage"
+              ></textarea>
+
+              <a href="#contact" class="contact-btn">Send</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer would go here -->
+    <section class="footer" id="Contact">
+      <div class="footer-container">
+        <div class="footer-location">
+          <div class="quik-header">
+            <img src="./logo.jpg" alt="" />
+            <h4>Vulnerable Wellfare Foundation</h4>
+          </div>
+          <p id="footer-msg">
+            You can support us by donating money, educational materials.
+          </p>
+
+          <div class="location">
+            <h4>LOCATION</h4>
+            <span
+            <i class="bi bi-geo-alt-fill"></i>
+              <p>Google Map</p></span
+            >
+          </div>
+        </div>
+
+        <div class="quik-links">
+          <h4 class="quik-header">QUIK LINKS</h4>
+          <p>About Us</p>
+          <p>Team</p>
+          <p>Event</p>
+        </div>
+
+        <div class="Campaigns-link">
+          <h4 class="quik-header">FOLLOW US</h4>
+          <div class="social-links">
+            <a href="#" class="social-button">
+              <i class="fa-brands fa-twitter" style="font-size: 20px"></i>
+            </a>
+            <a href="#" class="social-button">
+              <i class="fa-brands fa-instagram" style="font-size: 20px"></i>
+            </a>
+            <a href="#" class="social-button">
+              <i class="fa-brands fa-discord" style="font-size: 20px"></i>
+            </a>
+          </div>
+
+          <div class="contact-us">
+            <h4>CONTACT US</h4>
+            <div class="contact">
+              <i
+                class="fa fa-envelope"
+                style="color: #fff; font-size: 20px"
+              ></i>
+              <p>vulnerablwf@gmail.com</p>
+            </div>
+
+            <div class="contact">
+              <i
+                class="fa-solid fa-square-phone"
+                style="color: #fff; font-size: 20px"
+                f
+              ></i>
+              <p>0591880314</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="quik-donation">
+          <h4>
+            We Work Together For a <br />Beautiful World. Come <br />Join Us
+            Today!
+          </h4>
+          <button class="donate-ft-btn">Donate Now</button>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <div class="h-line"></div>
+        <p>Copyright Vulnerable Wellfare Foun. 2022</p>
+      </div>
+    </section>
+    
+   
+
+    <!-- Social Media Links -->
+    <!-- <div class="social-container">
+        
+        <div class="copyright">
+             <p>Copyright Northern Audio 2022</p>
+        </div>
+    </div> -->
+
+    <!-- Link to external JavaScript file -->
+    <script src="index.js"></script>
+  </body>
+</html>
